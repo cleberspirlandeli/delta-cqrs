@@ -1,0 +1,29 @@
+*.swp
+*.*~
+projeto.lock.json
+.DS_Store
+*.pyc
+
+# Código do Visual Studio
+.vscode
+
+# Arquivos específicos do usuário
+*.suo
+*.do utilizador
+*.userosscache
+*.sln.docstates
+
+# Construir resultados
+[Dd]ebug/
+[Dd]ebugPúblico/
+[Rr] solte/
+[Rr] libera/
+x64/
+x86/
+Construir/
+prédio/
+[Bb] em/
+[Oo] bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
