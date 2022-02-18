@@ -29,6 +29,10 @@ namespace NerdStore.Catalogo.Data.Mappings
                 .IsRequired()
                 .HasColumnType("varchar(250)");
 
+            builder.Property(c => c.Valor)
+                .IsRequired()
+                .HasColumnType("decimal(18,4)");
+
             builder.OwnsOne(c => c.Dimensoes, cm =>
             {
                 cm.Property(c => c.Altura)

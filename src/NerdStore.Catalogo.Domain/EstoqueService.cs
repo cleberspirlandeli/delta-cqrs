@@ -1,5 +1,5 @@
 ﻿using NerdStore.Catalogo.Domain.Events;
-using NerdStore.Core.Bus;
+using NerdStore.Core.Communication.Mediator;
 using System;
 using System.Threading.Tasks;
 
@@ -8,10 +8,10 @@ namespace NerdStore.Catalogo.Domain
     public class EstoqueService : IEstoqueService
     {
         private readonly IProdutoRepository _produtoRepository;
-        private readonly IMediatrHandler _bus;
+        private readonly IMediatorHandler _bus;
 
         public EstoqueService(IProdutoRepository produtoRepository,
-            IMediatrHandler bus)
+            IMediatorHandler bus)
         {
             _produtoRepository = produtoRepository;
             _bus = bus;
